@@ -1,0 +1,14 @@
+note over browser:
+browser executes the event handler
+that adds appends the note in the list
+and sends a request to save a note to the server
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over server:
+server saves note and
+respond with a 201 status code
+end note
+
+server-->browser: HTTP 201
